@@ -3,7 +3,7 @@ package com.example.todoapp.auth
 import com.example.todoapp.data.TodoDao
 import com.example.todoapp.data.User
 import com.example.todoapp.data.UserDao
-import com.example.todoapp.utils.SessionManager // <-- Ensure this import is exactly this
+import com.example.todoapp.utils.SessionManager 
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -12,7 +12,7 @@ import javax.inject.Singleton
 class AuthRepository @Inject constructor(
     private val userDao: UserDao,
     private val todoDao: TodoDao,
-    private val sessionManager: SessionManager // <-- Now this will resolve perfectly
+    private val sessionManager: SessionManager 
 )  {
     val currentUserId: Flow<String?> = sessionManager.userIdFlow
     val currentUserEmail: Flow<String?> = sessionManager.userEmailFlow
