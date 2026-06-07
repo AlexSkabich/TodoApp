@@ -96,7 +96,7 @@ fun AuthScreen(
                 password = it
                 clearError()
             },
-            label = { Text("Password (min. 6 characters)") }, // <-- Added hint
+            label = { Text("Password (min. 6 characters)") },
             modifier = Modifier.fillMaxWidth(),
             singleLine = true,
             visualTransformation = PasswordVisualTransformation(),
@@ -132,7 +132,7 @@ fun AuthScreen(
             modifier = Modifier
                 .fillMaxWidth()
                 .height(50.dp),
-            enabled = isFormValid // Stays disabled until BOTH email and password are valid
+            enabled = isFormValid
         ) {
             Text(
                 text = if (isLogin) "Sign In" else "Register",
