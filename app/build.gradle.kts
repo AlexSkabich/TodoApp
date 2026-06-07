@@ -38,7 +38,7 @@ android {
     buildFeatures {
         compose = true
     }
-    // DELETE THE OLD composeOptions { kotlinCompilerExtensionVersion = "..." } BLOCK ENTIRELY
+   
 
     packaging {
         resources {
